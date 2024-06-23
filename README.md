@@ -1,15 +1,10 @@
 ### instalasi :
 ```sh
-cd /root/PPPwn-py
+sudo apt install git -y
 ```
 ```sh
-sudo apt install python3-pip -y
+git clone --recursive --depth 1 https://github.com/bug-sys/PPPwn-py
 ```
 ```sh
-sudo pip install -r requirements.txt
-```
-
-### jalankan :
-```sh
-sudo python3 main.py
+sudo bash /root/PPPwn-py/install.all
 ```
