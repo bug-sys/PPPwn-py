@@ -37,7 +37,7 @@ main_menu() {
 }
 
 # Sumberkan file konfigurasi
-source /root/PPPwn/config.ini
+source /root/PPPwn-py/config.ini
 
 # Titik masuk dari skrip
 main_menu
