@@ -18,7 +18,7 @@ def main():
     parser.add_argument('--stage2', default='/root/PPPwn-py/1100/stage2.bin')
     args = parser.parse_args()
 
-    print("\033[1;32mPorting oleh bug-sys 2024 (c)\033[0m")
+    print("\033[1;32mPorting by bug-sys 2024 (c)\033[0m")
 
     try:
         with open(args.stage1, mode='rb') as f:
