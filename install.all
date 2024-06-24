@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo chmod +x /root/PPPwn/PPPwn-py/pppwn
+sudo chmod +x /root/PPPwn-py/pppwn
 sudo sed -i 's^"exit 0"^"exit"^g' /etc/rc.local
 sudo sed -i 's^sudo bash /root/PPPwn-py/run.sh \&^^g' /etc/rc.local
 sudo sed -i 's^exit 0^sudo bash /root/PPPwn-py/run.sh \&\n\nexit 0^g' /etc/rc.local
