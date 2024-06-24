@@ -10,16 +10,18 @@ run_pppwn() {
     while true; do
         # Mematikan dan menyalakan kembali antarmuka eth0
         sudo ip link set dev eth0 down && sudo ip link set dev eth0 up
-        
+
         # Menjalankan pppwn
         sudo "$pppwn" --interface "$interface" --fw "$fw" --stage1 "$stage1" --stage2 "$stage2" &
         pppwn_pid=$!
         wait $pppwn_pid > /dev/null 2>&1
         pppwn_exit_status=$?
-        
+
         if [ $pppwn_exit_status -eq 0 ]; then
             sudo shutdown -h now
-        fi		
+        else
+            sleep 5
+        fi
     done
 }
 
